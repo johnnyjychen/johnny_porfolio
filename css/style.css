@@ -1,0 +1,501 @@
+/* style some general stuff */
+body {
+    line-height: 1.6;
+    background: #f5f5f5;
+}
+
+li {
+    list-style-type: none;
+}
+
+ol li {
+    list-style-type: decimal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skip {
+    position: absolute;
+    left: -600px;
+    color: #000;
+    text-decoration: none;
+    background: #F4F8F1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* style the header */
+.hamburger_menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#hamburger_menu {
+    display: none;
+}
+
+#hamburger_menu:checked ~ .nav_list {
+    right: 0;
+}
+
+.nav_list {
+    width: 60%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    right: -800px;
+    top: 0;
+    transition: 0.5s;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.nav_list a {
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    color: #000;
+    text-decoration: none;
+    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #5284D0;
+    text-decoration: underline;
+}
+
+.nav_list .home_icon a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+header nav div a h1 {
+    font-size: 1.5rem;
+    font-family: "Hanalei Fill", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home_icon {
+    display: none;
+}
+
+.linkedin_icon {
+    display: none;
+}
+
+/* style the home page */
+/* first: style the introduction part */
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 50px 0 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.main_img {
+    width: 200px;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #5284D0;
+}
+
+.highlight_data {
+    font-weight: bold;
+    color: #018B96;
+}
+
+.highlight_water {
+    font-weight: bold;
+    color: #797A71;
+}
+
+h1 {
+    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+/* second: style the portfolio in the home page */
+.portfolio {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px;
+    align-items: start;
+    margin-top: 20px;
+    row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.main_description {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.work_description {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.project_content {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.work_style {
+    grid-column: 2/3;
+}
+
+section div a img {
+    border-radius: 10px;
+    box-shadow: 0 6px 6px #B5B5B5;
+}
+
+section div a img:hover {
+    box-shadow: 0 0 0;
+}
+
+.project_description {
+    display: none;
+}
+
+.project_description_white {
+    display: none;
+}
+
+/* style the education page */
+.intro_edu {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 55px 0 55px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.intro_edu ul li {
+    text-align: center;
+}
+
+.intro_edu div ul {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.indented {
+    display: none;
+}
+
+/* style the footer */
+footer {
+    width: 100%;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 -2px 2px #B5B5B5;
+}
+
+footer :first-child {
+    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+}
+
+/* style the project pages */
+.project {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px;
+    align-items: start;
+    margin-top: 20px;
+    row-gap: 10px;
+    margin-bottom: 40px;
+}
+
+section div h2 {
+    text-decoration: underline;
+}
+
+
+
+/* style the project content */
+.heading_pic {
+    margin-top: 34px;
+}
+
+section div p a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* data content */
+.data_content {
+    padding: 10px;
+    border: #B6B6B6 solid 1px;
+    border-radius: 10px;
+    background: #fff;
+    text-align: left;
+}
+
+.indented_20 {
+    text-indent: 20px;
+}
+
+.indented_60 {
+    text-indent: 60px;
+}
+
+.indented_80 {
+    text-indent: 80px;
+}
+
+.codes_color {
+    color: #018B96;
+}
+
+/* water */
+/* .references {
+    display: none;
+} */
+
+/* media on 768px */
+@media screen and (min-width: 768px) {
+    .skip:focus {
+        top: 80px;
+        left: 30px;
+    }
+
+    /* style the header on the laptop*/
+    .hamburger_menu {
+        visibility: hidden;
+    }
+
+    /* style the linkedin */
+    .linkedin {
+        display: flex;
+        align-items: center;
+    }
+
+    .linkedin h1 {
+        margin-right: 20px;
+    }
+
+    .linkedin_icon {
+        display: block;
+        width: 24px;
+        border-radius: 0;
+        box-shadow: 0 0 0;
+        margin-bottom: 0;
+    }
+
+    /* restyle the grid */
+    .portfolio {
+        grid-template-columns: 250px 1fr 1fr 250px;
+    }
+
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        box-shadow: 0 2px 2px #B5B5B5;
+        position: fixed;
+        padding: 0;
+        z-index: 3;
+    }
+
+    .home_icon {
+        display: flex;
+        margin-left: 80px;
+    }
+
+    .nav_items {
+        display: flex;
+        justify-content: end;
+        margin-right: 80px;
+    }
+
+    .nav_list a {
+        margin-left: 20px;
+    }
+
+    /* style home page */
+    .main_description {
+        grid-column: 2/4;
+        text-align: left;
+        margin-bottom: -20px;
+    }
+
+    .work_description {
+        grid-column: 2/4;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    .work_style {
+        grid-column: 2/4;
+    }
+
+    /* style the hover effect of images */
+    /* the font color is black */
+    a {
+        text-decoration: none;
+    }
+
+    .project_images {
+        position: relative;
+        display: inline-block;
+    }
+
+    .project_images img {
+        display: block;
+        width: 100%;
+        transition: filter 0.3s;
+    }
+
+    .project_description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project_images:hover img {
+        filter: blur(10px);
+    }
+
+    .project_images:hover .project_description {
+        display: block;
+    }
+
+    /* second: the font color is white */
+    .project_images_white {
+        position: relative;
+        display: inline-block;
+    }
+
+    .project_images_white img {
+        display: block;
+        width: 100%;
+        transition: filter 0.3s;
+      }
+
+    .project_description_white {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project_images_white:hover img {
+        filter: blur(10px);
+    }
+
+    .project_images_white:hover .project_description_white {
+        display: block;
+    }
+
+    /* style the introduction on the laptop */
+    .intro {
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .main_img, .intro_content {
+        flex: 1;
+        padding: 2em;
+    }
+
+    .main_img {
+        max-width: 340px;
+    }
+
+    .intro_content, .intro_content p {
+        text-align: left;
+    }
+
+    /* style the work page */
+    .work {
+        margin-left: 200px;
+    }
+
+    /* restyle the education page */
+    .intro_edu {
+        flex-direction: row;
+        text-align-last: left;
+    }
+
+    .edu_content {
+        padding: 2em;
+    }
+
+    .indented {
+        display: block;
+        text-indent: 40px;
+    }
+
+    /* heading pictures of projects */
+    .heading_pic {
+        margin-top: 60px;
+    }
+
+    /* style the project content */
+    .project .project_content h1 {
+        text-align: center;
+    }
+
+    .project {
+        grid-template-columns: 250px 1fr 1fr 250px;
+    }
+
+    .project_content {
+        grid-column: 2/4;
+        text-align: left;
+    }
+
+    .full_img {
+        grid-column: 1/5;
+    }
+}

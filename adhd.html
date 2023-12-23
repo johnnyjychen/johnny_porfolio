@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Nanum Pen Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Hanalei Fill' rel='stylesheet'>
+    <title>FocusSphere</title>
+</head>
+<body>
+
+    <a class="skip" href="#main">Skip to the Main Content</a>
+
+    <header>
+        <input type="checkbox" id="hamburger_menu">
+        <label for="hamburger_menu" class="hamburger_menu">
+            <img src="./images/hamburger.png" alt="A menu button">
+        </label>
+
+        <nav class="nav_list">
+            <div class="home_icon">
+                <a href="index.html">
+                    <h1>Johnny Chen</h1>
+                </a>
+            </div>
+
+            <div class="nav_items">
+                <a href="index.html">
+                    <img src="./images/home.png" alt="The home icon" class="icon">
+                    <span>Home</span>
+                </a>
+    
+                <a href="work.html">
+                    <img src="./images/folder.png" alt="The work icon" class="icon">
+                    <span>Work</span>
+                </a>
+    
+                <a href="education.html">
+                    <img src="./images/mortarboard.png" alt="The education icon" class="icon">
+                    <span>Education</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="heading_pic">
+        <img src="./images/adhd.png" alt="The heading picture of adhd project">
+    </div>
+
+    <section class="project">
+        <div class="project_content">
+            <h1>FocusSphere</h1>
+            <h2>Project Information</h2>
+            <p><span class="highlight">Overview</span>: 
+            Our group developed a mobile that helps individuals with attention-deficit/hyperactivity disorder (ADHD) better 
+            prioritize and manage their daily tasks. 
+            You can view the whole process of how we developed this app here.
+            </p>
+            <p><span class="highlight">Project Type</span>: Group Project in the course of SI 582 - Introduction to Interactive Design</p>
+            <p><span class="highlight">Duration</span>: 9/2023 - 12/2023</p>
+            <p><span class="highlight">Skills</span>: Interactive Design, User Interview, Heuristic Evaluation, User Flow, Paper Prototypes, 
+                Wireframing, High-fidelity Prototypes, Figma, Adobe Photoshop, Web Development</p>
+        </div>
+
+        <div class="project_content">
+            <h2>Problem Statement</h2>
+            <p>
+                Individuals with ADHD encounter challenges in effectively managing their daily tasks, compounded by difficulties in prioritizing these tasks. 
+                Therefore, we aimed to address this issue by developing an effective solution that not only assists these individuals in task management and completion 
+                but also helps determine the priorities of their day-to-day tasks.
+            </p>
+        </div>
+
+        <div class="project_content">
+            <h2>Research Background</h2>
+            <p>
+                We conducted a literature review to understand the current challenges of ADHD and the existing solutions. 
+                We found that individuals with ADHD have trouble with their working memory, which is an ability to retain information for immediate use, and therefore they would have difficulty in 
+                accomplishing a lot of daily tasks.
+                They usually suffer from losing things and cannot accomplish daily tasks well in life. It is difficult for them to concentrate 
+                on completing tasks and distinguish the priorities of different tasks. So, it is helpful and meaningful 
+                to design a product that could encourage them to form a daily habit to check their routine.
+            </p>
+        </br>
+            <p><span class="highlight">Existing Solutions</span>: There are some ways to help individuals with ADHD improve their memory,
+                such as using visual aids and electronic reminders. The advantage of using visual aids is that it
+                helps individuals with ADHD understand, remember, and follow the information they receive.
+                However, individuals with ADHD might find it difficult to find effective visual aids in different
+                situations. Similarly with the use of calendars and reminders. These tools can work as a memory
+                assistant to support them; however, it is easier for them to get distracted when using electronic
+                devices.</p>
+        </div>
+
+        <div class="project_content">
+            <h2>User Interview</h2>
+            <p>
+                To further confirm the problem individuals with ADHD were facing, 
+                we recruited five interviewees from social media and conducted interviews on them.
+                All of them were Asian adult women.
+                Based on their responses, we found that they all had difficulties in prioritizing their tasks.
+                The followings were some valuable insights:
+            </p>
+            <ol>
+                <li><span class="highlight">Tools' pros & cons and their affordability</span>: 
+                    As for tech products, participants use different applications and platforms, such as calendar software and task-management software. 
+                    Participants mentioned that mobile apps were convenient because they could automatically update tasks in other tools when connecting other platforms. 
+                    Despite these advantages, there are some inherent drawbacks. One participant pointed out, “The act of opening an app is distracting, which can affect my short-term memory.” 
+                    Another participant echoed a similar sentiment, stating, “I tried to use reminders on my phone before as well but I would even forget to open the reminder.”</li>
+                <li><span class="highlight">Reminders are particularly beneficial</span>: Some of our respondents mentioned that they forgot what they were going to do before they even opened the software they used to record it. 
+                    One reason is that individuals with ADHD rely on external prompts rather than having to rely on their own efforts to remember tasks. Meanwhile, it is hard for them to prioritize their tasks, 
+                    for example thinking that cleaning rooms is as important as studying for exams, so reminders from others are useful for them.</li>
+                <li><span class="highlight">Our design should not be a burden</span>: Our goal is to help them better complete their daily tasks instead of increasing their burden, it is necessary to make every feature in our design easy to learn how to use.
+                    As one participant mentioned, many things that she needed to do would interrupt each other, which would cause a lot of trouble in her life. If she only needed to enter what she thinks she needs to do every day at first, such as ordering takeout, 
+                    and set it to remind her automatically every day, it would reduce her burden of using the software.</li>
+            </ol>
+        </div>
+
+        <div class="project_content">
+            <h2>Persona</h2>
+            <p>
+                After we collected data from previous literature and participants, 
+                we created two personas based on the analysis so we could have a more direct and specific understanding of our target users.
+            </p>
+        </div>
+
+        <img src="./images/adhd/persona_1.png" alt="The first persona" class="project_content">
+        <img src="./images/adhd/persona_2.png" alt="The second persona" class="project_content">
+
+        <div class="project_content">
+            <h2>User Flow</h2>
+        </div>
+
+        <img src="./images/adhd/userflow.png" alt="The user flow" class="full_img">
+
+        <div class="project_content">
+            <h2>Paper Prototypes</h2>
+            <p>We found that paper prototypes were a great tool to implement our ideas, 
+                because it was less expensive and easy to modify later.
+                Therefore, we created paper prototypes of the main features based on our user flow.
+            </p>
+        </div>
+
+        <img src="./images/adhd/paper_1.png" alt="The first paper prototype" class="project_content">
+        <img src="./images/adhd/paper_2.png" alt="The second paper prototype" class="project_content">
+        <img src="./images/adhd/paper_3.png" alt="The third paper prototype" class="project_content">
+        <img src="./images/adhd/paper_4.png" alt="The fourth paper prototype" class="project_content">
+
+        <div class="project_content">
+            <h2>Wireframes</h2>
+            <p>Based on what we got from our users, we modified our paper prototypes and then created wirefrmaes.
+                Although they did not have any colors, they were more detailed and specific than paper prototypes.
+            </p>
+
+        </div>
+        <img src="./images/adhd/wireframe_1.png" alt="Log in wireframe" class="project_content">
+        <img src="./images/adhd/wireframe_2.png" alt="Summary wireframe" class="project_content">
+        <img src="./images/adhd/wireframe_3.png" alt="Add tasks wireframe" class="project_content">
+        <img src="./images/adhd/wireframe_4.png" alt="History wireframe" class="project_content">
+
+        <div class="project_content">
+            <h2>High-fidelity Prototypes</h2>
+            <p>We modified the wireframes and started creating the high-fidelity prototypes based on all suggestions we got from interviews.
+                We tried to make them to look like a real mobile app.
+            </p>
+        </div>
+
+        <img src="./images/adhd/high_1.png" alt="The first high-fidelity prototype" class="project_content">
+        <img src="./images/adhd/high_2.png" alt="The second high-fidelity prototype" class="project_content">
+        <img src="./images/adhd/high_3.png" alt="The third high-fidelity prototype" class="project_content">
+        <img src="./images/adhd/high_4.png" alt="The fourth high-fidelity prototype" class="project_content">
+
+        <div class="project_content">
+            <h2>Presentation</h2>
+            <p>After we finished the high-fidelity prototypes, we presented our project to our classmates and professor.
+                We received many useful suggestions from them.
+                We understand that real app development still needed more testing.
+                Overall, I have learned a lot of valuable things in this teamwork.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Let's Connect!</p>
+        <p>- Email: johnnyuchen@gmail.com -</p>
+    </footer>
+    
+</body>
+</html>
