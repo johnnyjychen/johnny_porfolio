@@ -288,9 +288,9 @@ section div p a {
 }
 
 /* water */
-/* .references {
+.references {
     display: none;
-} */
+}
 
 /* media on 768px */
 @media screen and (min-width: 768px) {
@@ -459,6 +459,11 @@ section div p a {
     /* style the work page */
     .work {
         margin-left: 200px;
+    }
+
+    /* style the reference in water project */
+    .references {
+        display: block;
     }
 
     /* restyle the education page */
