@@ -252,6 +252,16 @@ section div p a {
     text-decoration: none;
 }
 
+
+/* adhd content */
+.suggest {
+    display: none;
+}
+
+.full_img {
+    grid-column: 1/4;
+}
+
 /* data content */
 .data_content {
     padding: 10px;
@@ -385,7 +395,7 @@ section div p a {
     }
 
     .project_images:hover img {
-        filter: blur(10px);
+        filter: blur(15px);
     }
 
     .project_images:hover .project_description {
@@ -402,7 +412,7 @@ section div p a {
         display: block;
         width: 100%;
         transition: filter 0.3s;
-      }
+    }
 
     .project_description_white {
         position: absolute;
@@ -482,5 +492,9 @@ section div p a {
 
     .full_img {
         grid-column: 1/5;
+    }
+
+    .suggest {
+        display: block;
     }
 }
