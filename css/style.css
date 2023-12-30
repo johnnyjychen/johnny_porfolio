@@ -252,6 +252,9 @@ section div p a {
     text-decoration: none;
 }
 
+.references {
+    display: none;
+}
 
 /* adhd content */
 .suggest {
@@ -495,6 +498,10 @@ section div p a {
     }
 
     .suggest {
+        display: block;
+    }
+
+    .references {
         display: block;
     }
 }
