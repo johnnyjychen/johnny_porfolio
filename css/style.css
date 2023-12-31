@@ -493,6 +493,10 @@ section div p a {
         text-align: left;
     }
 
+    video {
+        width: 100%;
+    }
+
     .full_img {
         grid-column: 1/5;
     }
