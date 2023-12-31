@@ -186,6 +186,7 @@ section div a img:hover {
     background: #fff;
     grid-column: 2/3;
     position: relative;
+    box-shadow: 0 2px 2px #B5B5B5;
 }
 
 .corner_img {
