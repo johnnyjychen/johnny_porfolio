@@ -265,6 +265,10 @@ section div p a {
     grid-column: 1/4;
 }
 
+video {
+    width: 100%;
+}
+
 /* data content */
 .data_content {
     padding: 10px;
@@ -491,10 +495,6 @@ section div p a {
     .project_content {
         grid-column: 2/4;
         text-align: left;
-    }
-
-    video {
-        width: 100%;
     }
 
     .full_img {
