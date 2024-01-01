@@ -234,6 +234,7 @@ section div a img:hover {
     box-shadow: 0 2px 2px #B5B5B5;
 }
 
+
 /* style the education page */
 .intro_edu {
     display: flex;
@@ -626,7 +627,7 @@ video {
     .suggest {
         display: block;
     }
-
+    
     .references {
         display: block;
     }
