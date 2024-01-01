@@ -79,12 +79,12 @@
         <div class="project_content">
             <h2>Data Visualization</h2>
             <p>I would like to visualize some data first, so I could have a general understanding of some specific variables that I was interested in.</p></br>
-            <h3>The relationship between the year and the rating</h3>
+            <h3>1. The relationship between the year and the rating</h3>
             <p>I was interested in whether there was a relationship between the year and the rating. 
                 These two variables were both numerical, and there was an inherent ordering to the variable, year. 
                 Therefore, I used the linegraph to visualize the dataset.
             </p>
-            <p><strong>Below was the codes.</strong></p>
+            <p><strong>a. Below was the codes.</strong></p>
             <div class="data_content">
                 <p>ggplot(TopAnimatedImDb, aes(x = Year, y = Rating)) +</p>
                 <p class="indented_20">geom_line(color = "#018B96") +</p>
@@ -95,14 +95,14 @@
                 <p class="indented_60">title = <span class="codes_color">"The Relationship Between the Year and the Rating"</span>)</p>
             </div>
 
-            <p><strong>Below was the graph.</strong></p>
+            <p><strong>b. Below was the graph.</strong></p>
             <img src="./images/data_project/linegraph.png" alt="The lingraph" class="chart"></br></br>
-            <h3>The relationship between the runtime and the rating.</h3>
+            <h3>2. The relationship between the runtime and the rating.</h3>
             <p> Then, I wanted to know the relationship between the runtime and the rating.
                 These two variables were both numerical, but they did not have an inherent ordering.
                 Therefore, I used the scatterplot to visualize the dataset.
             </p>
-            <p><strong>Below was the codes.</strong></p>
+            <p><strong>a. Below was the codes.</strong></p>
             <div class="data_content">
                 <p>ggplot(TopAnimatedImDb, aes(x = Year, y = Rating)) +</p>
                 <p class="indented_20">geom_point(color = "#018B96") +</p>
@@ -112,15 +112,15 @@
                 <p class="indented_20">labs(x = <span class="codes_color">"The Runtime of Movies"</span>, y = <span class="codes_color">"The Rating of Movies"</span>,</p>
                 <p class="indented_60">title = <span class="codes_color">"The Relationship Between the Runtime and the Rating"</span>)</p>
             </div>
-            <p><strong>Below was the graph.</strong></p>
+            <p><strong>b. Below was the graph.</strong></p>
             <img src="./images/data_project/scatterplot.png" alt="The scatterplot" class="chart"></br></br>
-            <h3>The count of different genres</h3>
+            <h3>3. The count of different genres</h3>
             <p>
                 Finally, I also would like to know the count of different genres of these movies.
                 Because it was a categorical variable, I used the barplot to visualize it.
                 Below was the codes.
             </p>
-            <p><strong>Below was the codes.</strong></p>
+            <p><strong>a. Below was the codes.</strong></p>
             <div class="data_content">
                 <p>ggplot(TopAnimatedImDb, aes(x = Genre)) +</p>
                 <p class="indented_20">geom_bar(fill = "#018B96") +</p>
@@ -130,17 +130,17 @@
                 <p class="indented_20">labs(x = <span class="codes_color">"The Genre of Movies"</span>, y = <span class="codes_color">"Count"</span>,</p>
                 <p class="indented_60">title = <span class="codes_color">"The Count of different genres"</span>)</p>
             </div>
-            <p><strong>Below was the graph.</strong></p>
+            <p><strong>b. Below was the graph.</strong></p>
             <img src="./images/data_project/genres.png" alt="The count of genres" class="chart">
 
         </div>
 
         <div class="project_content">
             <h2>Data Wrangling</h2>
-            <h3>Calculated the statistical summary</h3>
+            <h3>1. Calculated the statistical summary</h3>
             <p>For this part, I calculated the mean, median, and standard deviation of 
                  the variable, Runtime, and the variable, Rating.</p>
-            <p><strong>Below was the codes</strong></p>
+            <p><strong>a. Below was the codes</strong></p>
             <div class="data_content">
                 <p>summary_rating &lt;- TopAnimatedImDb %>%</p>
                 <p class="indented_20">mutate(Runtime_clean = as.numeric(str_remove(Runtime, " min"))) %>%</p>
@@ -152,30 +152,30 @@
                 <p class="indented_80">sd_runtime = sd(Runtime_clean, na.rm = TRUE))</p>
                 <p>summary_rating</p>
             </div>
-            <p><strong>Below was the result.</strong></p>
+            <p><strong>b. Below was the result.</strong></p>
             <img src="./images/data_project/wrangle.png" alt="Mean and Standard deviation" class="chart">
             <p><span class="highlight">Conclusion</span>: Now you can see values of mean, median, and standard deviation of the runtime and ratiing.</p>
         </div>
 
         <div class="project_content">
             <h2>Regression</h2>
-            <h3>Calculated the regression</h3>
+            <h3>1. Calculated the regression</h3>
             <p>Because I wanted to know if there was a relationship between the runtime and rating,
                 I calculated the regression of these two variables.
             </p>
-            <p><strong>Below was the codes</strong></p>
+            <p><strong>a. Below was the codes</strong></p>
             <div class="data_content">
                 <p>TopAnimatedImDb %>%</p>
                 <p class="indented_20">mutate(Runtime_clean = as.numeric(str_remove(Runtime, " min"))) %>%</p>
                 <p class="indented_20">get_correlation(Rating ~ Runtime_clean)</p>
             </div>
-            <p><strong>Below was the result.</strong></p>
+            <p><strong>b. Below was the result.</strong></p>
             <img src="./images/data_project/correlation.png" alt="The correlation" class="chart">
             <p><span class="highlight">Conclusion</span>: The correlation was about 0.23, which meant that there was a weak positive relationship between these two variables. 
                 In other words, movies with a longer runtime were more likely to have a higehr scores.</p>
         </br>
-            <h3>To have a clearer understanding, I fitted a linear model.</h3>
-            <p><strong>Below was the codes.</strong></p>
+            <h3>2. To have a clearer understanding, I fitted a linear model.</h3>
+            <p><strong>a. Below was the codes.</strong></p>
             <div class="data_content">
                 <p>ggplot(TopAnimatedImDb, aes(x = Year, y = Rating)) +</p>
                 <p class="indented_20">geom_point(color = "#018B96") +</p>
@@ -186,7 +186,7 @@
                 <p class="indented_60">title = <span class="codes_color">"The Relationship Between the Runtime and the Rating"</span>) +</p>
                 <p class="indented_20">geom_smooth(method = "lm", color = "#8EACCD", se = FALSE)</p>
             </div>
-            <p><strong>Below was the chart.</strong></p>
+            <p><strong>b. Below was the chart.</strong></p>
             <img src="./images/data_project/regression.png" alt="The regression of runtime and rating" class="chart">
             <p><span class="highlight">Conclusion</span>: There is a line that goes up from from the lower left to the upper right.</p>
         </div>
@@ -199,8 +199,8 @@
             <p>H0: There is no relationship between the runtime and the rating.</p>
             <p>H1: There is a relationship between the runtime and the rating.</p></br>
 
-            <h3>First, I hypothesized the null and calculated summary statistics.</h3>
-            <p><strong>Below was the codes.</strong></p>
+            <h3>1. First, I hypothesized the null and calculated summary statistics.</h3>
+            <p><strong>a. Below was the codes.</strong></p>
             <div class="data_content">
                 <p>movies_distribution &lt;- TopAnimatedImDb %>%</p>
                 <p class="indented_20">mutate(Runtime_clean = as.numeric(str_remove(Runtime, " min"))) %>%</p>
@@ -212,8 +212,8 @@
                 </p>
             </div></br>
 
-            <h3>Then, I calculated and visualized the p-value.</h3>
-            <p><strong>Below was the codes:</strong></p>
+            <h3>2. Then, I calculated and visualized the p-value.</h3>
+            <p><strong>a. Below was the codes:</strong></p>
             <div class="data_content">
                 <p>movies_obs_stat &lt;- TopAnimatedImDb %>%</p>
                 <p class="indented_20">mutate(Runtime_clean = as.numeric(str_remove(Runtime, " min")))%>%</p>
@@ -230,11 +230,11 @@
                 <p>visualize(movies_distribution) +</p>
                 <p class="indented_20">shade_p_value(obs_stat = movies_obs_stat, color = "#8EACCD", fill = "#018B96", direction = "both")</p>
             </div>
-            <p><strong>Below was the chart:</strong></p>
+            <p><strong>b. Below was the chart:</strong></p>
             <img src="./images/data_project/p-value_chart.png" alt="The chart of p-value" class="chart"></br></br>
 
-            <h3>Compared with confidence intervals</h3>
-            <p><strong>Below was the codes:</strong></p>
+            <h3>3. Compared with confidence intervals</h3>
+            <p><strong>a. Below was the codes:</strong></p>
             <div class="data_content">
                 <p>percentile_ci &lt;- movies_distribution %>%</p>
                 <p class="indented_20">get_confidence_interval(level = 0.95, type = "percentile")</p>
@@ -246,10 +246,10 @@
                 <p class="indented_20">shade_confidence_interval(endpoints = percentile_ci, color = "#8EACCD", fill = "#018B96")</p>
                 <p class="indented_20">labs(title = "Simulation-Based Bootstrap Distribution")</p>
             </div>
-            <p><strong>Below was the chart:</strong></p>
+            <p><strong>b. Below was the chart:</strong></p>
             <img src="./images/data_project/confidence.png" alt="The confidence interval" class="chart"></br></br>
 
-            <h3>Conclusion</h3>
+            <h3>4. Conclusion</h3>
             <p>Becasue the p-value was 0.036, which was greater than the α (0.05 in this case). 
                 Therefore, I successfully rejected the null hypothesis and accepted the alternative hypothesis.
                 <span class="highlight">In other words, there was a weak positive relationship between the runtime and the rating.</span>
