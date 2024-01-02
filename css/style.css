@@ -593,13 +593,7 @@ video {
         grid-column: 2/5;
         text-align: left;
     }
-
-    .ps_img {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
     
-
     .full_img {
         grid-column: 1/6;
     }
