@@ -308,6 +308,11 @@ footer h1, footer p{
     justify-self: center;
 }
 
+.ps_img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .ps_size {
     font-size: 1.5rem;
     font-weight: bold;
@@ -588,6 +593,12 @@ video {
         grid-column: 2/5;
         text-align: left;
     }
+
+    .ps_img {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
 
     .full_img {
         grid-column: 1/6;
