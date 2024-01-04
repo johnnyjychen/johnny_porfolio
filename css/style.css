@@ -299,9 +299,9 @@ footer h1, footer p{
 }
 
 
-/* .green_bg {
+.green_bg {
     background: #D7E5CA;
-} */
+}
 
 .full_width_bg .project img {
     grid-column: 2/3;
@@ -309,8 +309,7 @@ footer h1, footer p{
 }
 
 .ps_img {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    width: 80%;
 }
 
 .ps_size {
@@ -597,6 +596,11 @@ video {
     
     .full_img {
         grid-column: 1/6;
+    }
+
+    .project_margin {
+        margin-top: 160px;
+        margin-bottom: 160px;
     }
 
     .user_1 {
