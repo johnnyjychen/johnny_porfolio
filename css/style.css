@@ -131,6 +131,7 @@ h3 {
     font-weight: bold;
 }
 
+/* style the index font in the main page and work page */
 .index_h1 {
     font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
@@ -177,7 +178,7 @@ p {
 }
 
 section div a img {
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 6px 6px #B5B5B5;
 }
 
@@ -193,6 +194,7 @@ section div a img:hover {
     display: none;
 }
 
+/* style the users' insights */
 .user {
     border: 10px solid transparent;
     border-radius: 40px;
@@ -220,10 +222,6 @@ section div a img:hover {
     border-radius: 100px;
 }
 
-.statement {
-    background: #fff;
-}
-
 .solution {
     grid-column: 2/3;
     border: 10px solid transparent;
@@ -233,7 +231,6 @@ section div a img:hover {
     position: relative;
     box-shadow: 0 2px 2px #B5B5B5;
 }
-
 
 /* style the education page */
 .intro_edu {
@@ -323,11 +320,6 @@ footer h1, footer p{
     text-align: center;
 }
 
-/* section div h2 {
-    text-decoration: underline;
-} */
-
-/* style the project content */
 .heading_pic {
     margin-top: 34px;
 }
