@@ -13,6 +13,11 @@ ol li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+ul li {
+    list-style-type: disc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .skip {
     position: absolute;
     left: -600px;
@@ -131,6 +136,12 @@ h3 {
     font-weight: bold;
 }
 
+.user h3 {
+    font-family: "Readex Pro", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 /* style the index font in the main page and work page */
 .index_h1 {
     font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -196,13 +207,11 @@ section div a img:hover {
 
 /* style the users' insights */
 .user {
-    border: 10px solid transparent;
     border-radius: 40px;
     padding: 20px;
-    background: #fff;
+    background: #F4F3EE;
     grid-column: 2/3;
     position: relative;
-    box-shadow: 0 2px 2px #B5B5B5;
     margin-bottom: 20px;
 }
 
@@ -224,12 +233,10 @@ section div a img:hover {
 
 .solution {
     grid-column: 2/3;
-    border: 10px solid transparent;
     border-radius: 40px;
-    padding: 20px;
-    background: #fff;
+    padding: 50px;
+    background: #F4F3EE;
     position: relative;
-    box-shadow: 0 2px 2px #B5B5B5;
 }
 
 /* style the education page */
@@ -284,8 +291,14 @@ footer h1, footer p{
     grid-template-columns: 55px 1fr 55px;
     align-items: start;
     margin-top: 20px;
-    row-gap: 10px;
-    margin-bottom: 40px;
+    /* row-gap: 40px; */
+}
+
+.project_inside {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px;
+    align-items: start;
+    margin-top: 20px;
 }
 
 .full_width_bg {
@@ -296,11 +309,23 @@ footer h1, footer p{
 }
 
 
-.green_bg {
-    background: #D7E5CA;
+.green_background {
+    background: #D6E0D5;
 }
 
-.full_width_bg .project img {
+.blue_highlighted_background {
+    background: #D8E4E4;
+}
+
+.light_yellow_background {
+    background: #E4E7D4;
+}
+
+.light_grey_background {
+    background: #f5f5f5;
+}
+
+.full_width_bg .project_inside img {
     grid-column: 2/3;
     justify-self: center;
 }
@@ -335,6 +360,10 @@ section div p a {
 }
 
 /* adhd content */
+.white_background {
+    background: #fff;
+}
+
 .suggest {
     display: none;
 }
@@ -572,7 +601,13 @@ video {
         align-items: center;
     }
 
-    .full_width_bg .project img {
+    .project_inside {
+        grid-template-columns: 200px 1fr 1fr 1fr 200px;
+        column-gap: 50px;
+        align-items: center;
+    }
+
+    .full_width_bg .project_inside img {
         grid-column: 2/3;
     }
 
@@ -591,8 +626,8 @@ video {
     }
 
     .project_margin {
-        margin-top: 160px;
-        margin-bottom: 160px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     .user_1 {
