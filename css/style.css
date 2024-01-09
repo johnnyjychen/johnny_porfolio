@@ -318,7 +318,7 @@ footer h1, footer p{
 
 .blue_highlighted_background {
     background: #D8E4E4;
-    border-radius: 100px;
+    border-radius: 100px 100px 0 0;
 }
 
 .full_width_bg .project_inside img {
