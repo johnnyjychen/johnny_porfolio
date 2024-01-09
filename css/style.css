@@ -126,8 +126,8 @@ h1 {
 h2 {
     font-family: "Readex Pro", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
-    /* margin-top: 20px; */
     font-weight: bold;
+    margin-top: 10px;
 }
 
 h3 {
@@ -213,7 +213,6 @@ section div a img:hover {
     grid-column: 2/3;
     position: relative;
     margin-bottom: 20px;
-    margin-top: -20px;
 }
 
 .corner_img {
@@ -292,7 +291,6 @@ footer h1, footer p{
     grid-template-columns: 55px 1fr 55px;
     align-items: start;
     margin-top: 20px;
-    row-gap: 20px;
 }
 
 .project_inside {
@@ -314,14 +312,8 @@ footer h1, footer p{
     background: #D6E0D5;
 }
 
-.green_background_radius {
-    background: #D6E0D5;
-    border-radius: 100px;
-}
-
 .light_yellow_background {
     background: #F4F3EE;
-    border-radius: 100px;
 }
 
 .blue_highlighted_background {
