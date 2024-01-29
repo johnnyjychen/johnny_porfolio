@@ -85,7 +85,7 @@ a:hover {
 
 header nav div a h1 {
     font-size: 1.5rem;
-    font-family: "Hanalei Fill", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Chewy", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .home_icon {
@@ -144,7 +144,7 @@ h3 {
 
 /* style the index font in the main page and work page */
 .index_h1 {
-    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Chewy", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
 }
 
@@ -157,6 +157,11 @@ h3 {
 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
+}
+
+.intro_text {
+    font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
 }
 
 /* second: style the portfolio in the home page */
