@@ -439,7 +439,7 @@ iframe {
 
     /* restyle the grid */
     .portfolio {
-        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-columns: 225px 1fr 1fr 250px;
         row-gap: 40px;
     }
 
