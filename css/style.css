@@ -218,6 +218,11 @@ p {
     text-align: center;
 }
 
+.right_heading {
+    grid-column: 2/3;
+    text-align: right;
+}
+
 .work_style {
     grid-column: 2/3;
 }
@@ -327,13 +332,6 @@ footer h1, footer p{
     margin-top: 20px;
 }
 
-.project_inside {
-    display: grid;
-    grid-template-columns: 55px 1fr 55px;
-    align-items: start;
-    margin-top: 20px;
-}
-
 .full_width_bg {
     background-color: #fff;
     width: 100%;
@@ -354,7 +352,7 @@ footer h1, footer p{
     border-radius: 30px 30px 0 0;
 }
 
-.full_width_bg .project_inside img {
+.full_width_bg .project img {
     grid-column: 2/3;
     justify-self: center;
 }
@@ -370,6 +368,11 @@ footer h1, footer p{
 }
 
 .problem_statment {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.analysis_description {
     grid-column: 2/3;
     text-align: center;
 }
@@ -644,13 +647,7 @@ iframe {
         align-items: center;
     }
 
-    .project_inside {
-        grid-template-columns: 200px 1fr 1fr 1fr 200px;
-        column-gap: 50px;
-        align-items: center;
-    }
-
-    .full_width_bg .project_inside img {
+    .full_width_bg .project img {
         grid-column: 2/3;
     }
 
@@ -659,9 +656,30 @@ iframe {
         text-align: left;
     }
 
+    .analysis_description {
+        grid-column: 2/4;
+        text-align: left;
+        grid-row: 2;
+    }
+
+    .analysis_right_interface {
+        grid-column: 4/5;
+        grid-row: 2;
+        align-items: end;
+    }
+
     .project_content {
         grid-column: 2/5;
         text-align: left;
+    }
+
+    .right_heading {
+        grid-column: 2/5;
+        text-align: right;
+    }
+
+    .interface_position_right {
+        align-items: end;
     }
     
     .full_img {
@@ -676,19 +694,19 @@ iframe {
     .user_1 {
         grid-column: 2/3;
         height: 100%;
-        grid-row: 5;
+        grid-row: 6;
     }
 
     .user_2 {
         grid-column: 3/4;
         height: 100%;
-        grid-row: 5;
+        grid-row: 6;
     }
 
     .user_3 {
         grid-column: 4/5;
         height: 100%;
-        grid-row: 5;
+        grid-row: 6;
     }
 
     .suggest {
