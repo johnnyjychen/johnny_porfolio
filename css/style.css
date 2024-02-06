@@ -112,6 +112,10 @@ header nav div a h1 {
     justify-self: center;
 }
 
+.edu_img {
+    width: 200px;
+}
+
 .highlight {
     font-weight: bold;
     color: #2C4863;
@@ -128,7 +132,7 @@ header nav div a h1 {
     border: rgba(237, 213, 189, 0.5) solid 15px;
 }
 
-.intro_edu .main_img img {
+.intro_edu .edu_img img {
     border-radius: 100%;
     animation: morph 8s ease-in-out infinite;
     border: rgba(237, 213, 189, 0.5) solid 15px;
@@ -471,7 +475,7 @@ iframe {
 
     /* restyle the grid */
     .portfolio {
-        grid-template-columns: 225px 1fr 1fr 250px;
+        grid-template-columns: 250px 1fr 1fr 250px;
         row-gap: 40px;
     }
 
@@ -524,6 +528,10 @@ iframe {
     section div a img {
         border-radius: 30px;
         box-shadow: 0 4px 4px #B5B5B5;
+    }
+
+    .intro_text {
+        text-align: left;
     }
 
     /* style the hover effect of images */
@@ -606,7 +614,12 @@ iframe {
         max-width: 340px;
     }
 
-    .intro_content, .intro_content p {
+    .edu_img {
+        margin-top: 50px;
+        width: 280px;
+    }
+
+    .edu_content {
         text-align: left;
     }
 
@@ -617,10 +630,8 @@ iframe {
 
     /* restyle the education page */
     .intro_edu {
-        height: 100vh;
-        flex-direction: row;
-        margin-left: 55px;
-        margin-right: 55px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
 
     .intro_edu ul li {
