@@ -488,7 +488,7 @@ iframe {
         background: #fff;
         /* box-shadow: 0 2px 2px #B5B5B5; */
         border-bottom: #bbbbbb solid 0.5px;
-        position: absolute;
+        position: fixed;
         padding: 0;
         z-index: 3;
     }
