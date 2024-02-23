@@ -328,11 +328,6 @@ footer {
     padding-top: 20px;
 }
 
-footer :first-child {
-    font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-}
-
 footer h1, footer p{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
