@@ -398,6 +398,14 @@ section div p a {
     display: none;
 }
 
+.right_heading {
+    text-align: center;
+}
+
+.analysis_right_interface {
+    grid-column: 2;
+}
+
 /* adhd content */
 .suggest {
     display: none;
