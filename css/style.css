@@ -34,7 +34,7 @@ ul li {
     right: 10px;
     width: 24px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 6;
 }
 
 #hamburger_menu {
