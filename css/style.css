@@ -77,16 +77,6 @@ a:hover {
     background-size: cover;
 }
 
-/* .home_hover {
-    background-image: url('./images/home.png');
-}
-
-.home_hover:hover {
-    background-image: url('./images/home_highlight.png');
-} */
-
-
-
 .nav_list .home_icon a:hover {
     color: #000;
     text-decoration: none;
