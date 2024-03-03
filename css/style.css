@@ -469,6 +469,11 @@ video, iframe {
     
     body {
         animation: fadeIn 1s ease-out;
+        background: #F5F7F8;
+    }
+
+    footer {
+        background: none;
     }
 
     .skip:focus {
