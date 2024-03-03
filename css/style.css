@@ -143,13 +143,7 @@ header nav div a h1 {
     color: #943400;
 }
 
-.intro .main_img img {
-    border-radius: 100%;
-    animation: morph 8s ease-in-out infinite;
-    border: rgba(237, 213, 189, 0.5) solid 15px;
-}
-
-.intro_edu .edu_img img {
+.intro .main_img img, .intro_edu .edu_img img {
     border-radius: 100%;
     animation: morph 8s ease-in-out infinite;
     border: rgba(237, 213, 189, 0.5) solid 15px;
