@@ -1,7 +1,6 @@
 /* style some general stuff */
 body {
     line-height: 1.6;
-    /* background: #f7f7f7; */
 }
 
 li {
@@ -467,7 +466,6 @@ video, iframe {
     
     body {
         animation: fadeIn 1s ease-out;
-        background: #F5F7F8;
     }
 
     footer {
@@ -506,10 +504,10 @@ video, iframe {
         left: 0;
         width: 100%;
         height: 60px;
-        /* background: #fff; */
         position: fixed;
         padding: 0;
         z-index: 3;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
     }
 
     .home_icon {
