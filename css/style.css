@@ -507,7 +507,8 @@ video, iframe {
         position: fixed;
         padding: 0;
         z-index: 3;
-        border-bottom: 0.1px solid rgba(0, 0, 0, 0.2);
+        background: #F5F7F8;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
     }
 
     .home_icon {
