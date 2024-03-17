@@ -145,7 +145,7 @@ header nav div a h1 {
 .intro .main_img img, .intro_edu .edu_img img {
     border-radius: 100%;
     animation: morph 8s ease-in-out infinite;
-    border: rgba(237, 213, 189, 1) solid 15px;
+    border: rgba(237, 213, 189, 0.7) solid 15px;
 }
 
 @keyframes morph {
