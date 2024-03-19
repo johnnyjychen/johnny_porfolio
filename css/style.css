@@ -241,12 +241,12 @@ p {
     grid-column: 2/3;
 }
 
-section div a img {
+section div div a img {
     border-radius: 15px;
     /* box-shadow: 0 4px 4px #B5B5B5; */
 }
 
-section div a img:hover {
+section div div a img:hover {
     box-shadow: 0 0 0;
 }
 
@@ -388,7 +388,7 @@ footer h1, footer p{
     margin-top: 34px;
 }
 
-section div p a {
+section div div p a {
     color: #000;
     font-weight: bold;
     text-decoration: none;
@@ -532,7 +532,7 @@ video, iframe {
     .content_background {
         background: #fff;
         backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.7);
         width: 80%;
         margin: 0 auto;
     }
@@ -582,7 +582,7 @@ video, iframe {
         grid-column: 2/4;
     }
 
-    section div a img {
+    section div div a img {
         border-radius: 30px;
         /* box-shadow: 0 4px 4px #B5B5B5; */
     }
