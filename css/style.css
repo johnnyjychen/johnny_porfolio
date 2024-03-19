@@ -3,6 +3,10 @@ body {
     line-height: 1.6;
 }
 
+.work_background {
+    background-image: none;
+}
+
 li {
     list-style-type: none;
 }
@@ -692,9 +696,8 @@ video, iframe {
         margin-left: 200px;
     }
 
-
-
     .work_background {
+        background-image: url('/images/bg/background.jpg');
         background-size: cover;
         background-position: center;
         z-index: -2;
