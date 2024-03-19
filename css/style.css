@@ -3,10 +3,6 @@ body {
     line-height: 1.6;
 }
 
-.work_background {
-    background-image: none;
-}
-
 li {
     list-style-type: none;
 }
@@ -325,7 +321,7 @@ section div div a img:hover {
 /* style the footer */
 footer {
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
     padding-top: 20px;
 }
 
@@ -697,7 +693,6 @@ video, iframe {
     }
 
     .work_background {
-        background-image: url('/images/background.png');
         background-size: cover;
         background-position: center;
         z-index: -2;
