@@ -469,7 +469,7 @@ video, iframe {
         height: 100%;
     }
 
-    .background-slider {
+    .background_slider {
         position: fixed;
         top: 0;
         left: 0;
@@ -490,7 +490,31 @@ video, iframe {
         height: 100vh;
         background-size: cover;
         background-position: center;
-        opacity: 0.2;
+        opacity: 0.3;
+    }
+
+    .slide_1 {
+        background-image: url('../images/bg/bg_1.png');
+    }
+
+    .slide_2 {
+        background-image: url('../images/bg/bg_2.png');
+    }
+
+    .slide_3 {
+        background-image: url('../images/bg/bg_3.png');
+    }
+
+    .slide_4 {
+        background-image: url('../images/bg/bg_4.png');
+    }
+
+    .slide_5 {
+        background-image: url('../images/bg/bg_5.png');
+    }
+
+    .slide_6 {
+        background-image: url('../images/bg/bg_6.png');
     }
       
     @keyframes slide {
@@ -693,7 +717,7 @@ video, iframe {
     }
 
     .work_background {
-        background-image: url(../images/background.png);
+        background-image: url(../images/background.jpeg);
         background-size: cover;
         background-position: center;
         z-index: -2;
