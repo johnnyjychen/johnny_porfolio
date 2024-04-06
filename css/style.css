@@ -126,16 +126,16 @@ header nav div a h1 {
 
 .index_bg {
     background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(../images/background.jpeg);
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .work_background {
     background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(../images/background.jpeg);
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -160,21 +160,25 @@ header nav div a h1 {
     color: #943400;
 }
 
-.intro .main_img img, .intro_edu .edu_img img {
+.intro .main_img img,
+.intro_edu .edu_img img {
     border-radius: 100%;
     animation: morph 8s ease-in-out infinite;
-    border: rgba(237, 213, 189, 0.7) solid 15px;
+    border: rgba(237, 213, 189) solid 15px;
 }
+
 @keyframes morph {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-   }
+    }
+
     50% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-   }
+    }
+
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-   }
+    }
 }
 
 h1 {
@@ -208,6 +212,11 @@ h3 {
     font-size: 2.5rem;
 }
 
+.index_h1_highlight {
+    font-family: "Chewy", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+}
+
 .index_h2 {
     font-family: "Nanum Pen Script", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
@@ -223,6 +232,10 @@ p {
     font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
 }
+
+/* .bubble {
+    display: none;
+} */
 
 /* second: style the portfolio in the home page */
 .portfolio {
@@ -341,7 +354,8 @@ footer {
     padding-top: 20px;
 }
 
-footer h1, footer p{
+footer h1,
+footer p {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #000;
@@ -470,16 +484,23 @@ iframe {
 }
 
 /* Video and demo */
-video, iframe {
+video,
+iframe {
     border-radius: 5px;
 }
+
 /* media on 768px */
 @media screen and (min-width: 768px) {
     @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
-    
+
     body {
         animation: fadeIn 1s ease-out;
         height: 100%;
@@ -494,11 +515,18 @@ video, iframe {
         overflow: hidden;
         z-index: -1;
     }
-    
+
 
     @keyframes slide {
-        0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(-50%); }
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-50%);
+        }
     }
 
     footer {
@@ -515,14 +543,54 @@ video, iframe {
         visibility: hidden;
     }
 
-    /* style the linkedin */
-    .linkedin {
-        display: flex;
-        align-items: center;
+    /* style the index */
+    .index_h1_highlight {
+        font-size: 6rem;
+        margin-bottom: 15px;
+        text-shadow: -6px 6px #BFCFE7;
     }
 
-    .linkedin h1 {
-        margin-right: 20px;
+    .speech-bubble {
+        position: absolute;
+        left: 100px;
+        top: 330px;
+        margin: .5em auto;
+        padding: 1em;
+        width: 10em;
+        height: 4em;
+        border-radius: 4em;
+        transform: rotate(-4deg) rotateY(15deg);
+        background: #4F709C;
+        font: 2em/4 Century Gothic, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .speech-bubble:before,
+    .speech-bubble:after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+    }
+
+    .speech-bubble:after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+        background: #fff;
+    }
+
+    .speech-bubble:before {
+        border: solid 0 transparent;
+        border-right: solid 4em #fff;
+        border-bottom: solid 0.5em #4F709C;
+        bottom: .5em;
+        left: 5em;
+        width: 0;
+        height: 0.5em;
+        transform: rotate(45deg) skewX(75deg);
     }
 
     /* restyle the grid */
@@ -597,6 +665,11 @@ video, iframe {
 
     .intro_text {
         text-align: left;
+        background: #fff;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 50px;
+        box-shadow: 12px 12px 0 0 #4F709C;
     }
 
     /* style the hover effect of images */
@@ -666,8 +739,8 @@ video, iframe {
 
     /* style the introduction on the laptop */
     .intro {
-        margin-right: 300px;
-        margin-left: 300px;
+        margin-right: 350px;
+        margin-left: 350px;
     }
 
     .intro_text {
@@ -680,7 +753,7 @@ video, iframe {
     } */
 
     .main_img {
-        width: 260px;
+        width: 280px;
     }
 
     .edu_img {
@@ -698,7 +771,7 @@ video, iframe {
     }
 
     .work_background {
-        background-image:url(../images/background.jpeg);
+        background-image: url(../images/background.jpeg);
         background-size: cover;
         background-position: center;
     }
@@ -773,7 +846,7 @@ video, iframe {
     .interface_position_right {
         align-items: end;
     }
-    
+
     .full_img {
         grid-column: 1/6;
     }
