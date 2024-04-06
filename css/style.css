@@ -546,7 +546,7 @@ iframe {
     /* style the index */
     .index_h1_highlight {
         font-size: 6rem;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         text-shadow: -6px 6px #BFCFE7;
     }
 
@@ -666,8 +666,8 @@ iframe {
     .intro_text {
         text-align: left;
         background: #fff;
-        margin-top: 15px;
-        padding: 15px;
+        margin-top: 30px;
+        padding: 20px;
         border-radius: 50px;
         box-shadow: 12px 12px 0 0 #4F709C;
     }
