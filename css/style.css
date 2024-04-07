@@ -241,7 +241,7 @@ p {
     text-align: center;
     width: 300px;
     position: absolute;
-    left: 150px;
+    left: 170px;
     top: 350px;
     color: #000;
     box-shadow: -6px 6px #4F709C;
@@ -271,8 +271,8 @@ p {
     text-align: center;
     width: 300px;
     position: absolute;
-    right: 150px;
-    top: 300px;
+    right: 170px;
+    top: 310px;
     color: #000;
     box-shadow: 6px 6px #4F709C;
     font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -747,6 +747,7 @@ iframe {
 
     .main_img {
         width: 280px;
+        z-index: 2;
     }
 
     .edu_img {
