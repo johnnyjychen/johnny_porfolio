@@ -233,9 +233,9 @@ p {
     font-size: 1.5rem;
 }
 
-.bubble_left, .bubble_right, .bubble_left:after, .bubble_right:after {
+/* .bubble_left, .bubble_right, .bubble_left:after, .bubble_right:after {
     display: none;
-}
+} */
 
 /* second: style the portfolio in the home page */
 .portfolio {
@@ -528,7 +528,7 @@ iframe {
     }
 
     .bubble_left {
-        display: block;
+        /* display: block; */
         background: #fff;
         border-radius: 50px;
         padding: 20px;
@@ -544,7 +544,7 @@ iframe {
     }
 
     .bubble_left:after {
-        display: block;
+        /* display: block; */
         content: '';
         position: absolute;
         bottom: -15px;
@@ -559,7 +559,7 @@ iframe {
     }
 
     .bubble_right {
-        display: block;
+        /* display: block; */
         background: #fff;
         border-radius: 50px;
         padding: 20px;
@@ -575,7 +575,7 @@ iframe {
     }
 
     .bubble_right:after {
-        display: block;
+        /* display: block; */
         content: '';
         position: absolute;
         bottom: -15px;
