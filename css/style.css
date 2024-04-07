@@ -233,9 +233,9 @@ p {
     font-size: 1.5rem;
 }
 
-/* .bubble {
+.bubble_left, .bubble_right {
     display: none;
-} */
+}
 
 /* second: style the portfolio in the home page */
 .portfolio {
@@ -550,47 +550,64 @@ iframe {
         text-shadow: -6px 6px #BFCFE7;
     }
 
-    .speech-bubble {
-        position: absolute;
-        left: 100px;
-        top: 330px;
-        margin: .5em auto;
-        padding: 1em;
-        width: 10em;
-        height: 4em;
-        border-radius: 4em;
-        transform: rotate(-4deg) rotateY(15deg);
-        background: #4F709C;
-        font: 2em/4 Century Gothic, Verdana, sans-serif;
-        text-align: center;
-    }
-
-    .speech-bubble:before,
-    .speech-bubble:after {
-        position: absolute;
-        z-index: -1;
-        content: '';
-    }
-
-    .speech-bubble:after {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: inherit;
-        transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+    .bubble_left {
+        display: block;
         background: #fff;
+        border-radius: 50px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        position: absolute;
+        left: 150px;
+        top: 350px;
+        color: #000;
+        box-shadow: -6px 6px #4F709C;
+        font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
     }
 
-    .speech-bubble:before {
-        border: solid 0 transparent;
-        border-right: solid 4em #fff;
-        border-bottom: solid 0.5em #4F709C;
-        bottom: .5em;
-        left: 5em;
+    .bubble_left:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 70%;
         width: 0;
-        height: 0.5em;
-        transform: rotate(45deg) skewX(75deg);
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #fff;
+        border-bottom: 0;
+        margin-left: -15px;
+        z-index: 1;
+    }
+
+    .bubble_right {
+        display: block;
+        background: #fff;
+        border-radius: 50px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        position: absolute;
+        right: 150px;
+        top: 300px;
+        color: #000;
+        box-shadow: 6px 6px #4F709C;
+        font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .bubble_right:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 30%;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #fff;
+        border-bottom: 0;
+        margin-left: -15px;
+        z-index: 1;
     }
 
     /* restyle the grid */
