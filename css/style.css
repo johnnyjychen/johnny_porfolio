@@ -233,7 +233,7 @@ p {
     font-size: 1.5rem;
 }
 
-.bubble_left, .bubble_right {
+.bubble_left, .bubble_right, .bubble_left:after, .bubble_right:after {
     display: none;
 }
 
@@ -506,29 +506,6 @@ iframe {
         height: 100%;
     }
 
-    .background_slider {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-
-    @keyframes slide {
-
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-
-        50% {
-            transform: translateX(-50%);
-        }
-    }
-
     footer {
         background: none;
     }
@@ -567,6 +544,7 @@ iframe {
     }
 
     .bubble_left:after {
+        display: block;
         content: '';
         position: absolute;
         bottom: -15px;
@@ -597,6 +575,7 @@ iframe {
     }
 
     .bubble_right:after {
+        display: block;
         content: '';
         position: absolute;
         bottom: -15px;
