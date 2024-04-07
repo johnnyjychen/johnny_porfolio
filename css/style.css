@@ -233,9 +233,65 @@ p {
     font-size: 1.5rem;
 }
 
-/* .bubble_left, .bubble_right, .bubble_left:after, .bubble_right:after {
+.bubble_left {
     display: none;
-} */
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    color: #000;
+    box-shadow: -6px 6px #4F709C;
+    font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.bubble_left:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 70%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.bubble_right {
+    display: none;
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    right: 150px;
+    top: 300px;
+    color: #000;
+    box-shadow: 6px 6px #4F709C;
+    font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.bubble_right:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    margin-left: -15px;
+    z-index: 1;
+}
 
 /* second: style the portfolio in the home page */
 .portfolio {
@@ -527,66 +583,8 @@ iframe {
         text-shadow: -6px 6px #BFCFE7;
     }
 
-    .bubble_left {
-        /* display: block; */
-        background: #fff;
-        border-radius: 50px;
-        padding: 20px;
-        text-align: center;
-        width: 300px;
-        position: absolute;
-        left: 150px;
-        top: 350px;
-        color: #000;
-        box-shadow: -6px 6px #4F709C;
-        font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.5rem;
-    }
-
-    .bubble_left:after {
-        /* display: block; */
-        content: '';
-        position: absolute;
-        bottom: -15px;
-        left: 70%;
-        width: 0;
-        height: 0;
-        border: 15px solid transparent;
-        border-top-color: #fff;
-        border-bottom: 0;
-        margin-left: -15px;
-        z-index: 1;
-    }
-
-    .bubble_right {
-        /* display: block; */
-        background: #fff;
-        border-radius: 50px;
-        padding: 20px;
-        text-align: center;
-        width: 300px;
-        position: absolute;
-        right: 150px;
-        top: 300px;
-        color: #000;
-        box-shadow: 6px 6px #4F709C;
-        font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.5rem;
-    }
-
-    .bubble_right:after {
-        /* display: block; */
-        content: '';
-        position: absolute;
-        bottom: -15px;
-        left: 30%;
-        width: 0;
-        height: 0;
-        border: 15px solid transparent;
-        border-top-color: #fff;
-        border-bottom: 0;
-        margin-left: -15px;
-        z-index: 1;
+    .bubble_left, .bubble_right {
+        display: block;
     }
 
     /* restyle the grid */
@@ -637,7 +635,7 @@ iframe {
         margin-left: 20px;
     }
 
-    /* style home page */
+    /* style work page */
     .main_description {
         grid-column: 2/4;
         text-align: left;
@@ -656,7 +654,6 @@ iframe {
 
     section div div a img {
         border-radius: 30px;
-        /* box-shadow: 0 4px 4px #B5B5B5; */
     }
 
     .intro_text {
