@@ -328,13 +328,12 @@ p {
 }
 
 section div div a img {
-    border-radius: 15px;
-    /* box-shadow: 0 4px 4px #B5B5B5; */
+    border-radius: 10px;
 }
 
-section div div a img:hover {
+/* section div div a img:hover {
     box-shadow: 0 0 0;
-}
+} */
 
 .project_description {
     display: none;
@@ -642,6 +641,10 @@ iframe {
         margin-bottom: -20px;
     }
 
+    section div div a img {
+        box-shadow: 0 8px 10px #D4D4D4;
+    }
+
     .work_description {
         grid-column: 2/4;
         text-align: left;
@@ -650,10 +653,6 @@ iframe {
 
     .work_style {
         grid-column: 2/4;
-    }
-
-    section div div a img {
-        border-radius: 30px;
     }
 
     .intro_text {
