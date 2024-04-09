@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = 0; i < contents.length; i++) {
             const windowHeight = window.innerHeight;
             const contentTop = contents[i].getBoundingClientRect().top;
-            const contentVisible = 250;
+            const contentVisible = 150;
 
             if (contentTop < windowHeight - contentVisible) {
                 contents[i].classList.add('visible');
