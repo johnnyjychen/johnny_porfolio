@@ -66,4 +66,23 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.email_icon').addEventListener('mouseout', function(){
         this.src = './images/email.png'
     })
+
+    const contents = document.querySelectorAll('.content');
+
+    const revealOnScroll = () => {
+        for (let i = 0; i < contents.length; i++) {
+            const windowHeight = window.innerHeight;
+            const contentTop = contents[i].getBoundingClientRect().top;
+            const contentVisible = 250;
+
+            if (contentTop < windowHeight - contentVisible) {
+                contents[i].classList.add('visible');
+            } else {
+                contents[i].classList.remove('visible');
+            }
+        }
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
 });
