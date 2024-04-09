@@ -223,6 +223,12 @@ h3 {
     text-decoration: underline;
 }
 
+.work_h2 {
+    font-family: "Poor Story", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
@@ -299,7 +305,7 @@ p {
     grid-template-columns: 55px 1fr 55px;
     align-items: start;
     margin-top: 20px;
-    row-gap: 20px;
+    row-gap: 10px;
     margin-bottom: 40px;
 }
 
@@ -590,7 +596,6 @@ iframe {
     .portfolio {
         grid-template-columns: 70px 1fr 1fr 70px;
         padding: 0 60px;
-        row-gap: 40px;
     }
 
     .content_background {
