@@ -336,9 +336,13 @@ section div div a img {
     border-radius: 10px;
 }
 
-/* section div div a img:hover {
-    box-shadow: 0 0 0;
-} */
+a {
+    color: #000;
+}
+
+.link_style {
+    font-weight: bold;
+}
 
 .project_description {
     display: none;
