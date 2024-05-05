@@ -547,6 +547,18 @@ iframe {
     color: #018B96;
 }
 
+/* water */
+.question_icon_size {
+    width: 120px;
+    margin: 20px;
+}
+
+.water_question {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #676A4E;
+}
+
 /* Video and demo */
 video,
 iframe {
