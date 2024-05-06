@@ -868,6 +868,14 @@ iframe {
         align-items: end;
     }
 
+    .finding4_row {
+        grid-row: 4;
+    }
+
+    .finding6_row {
+        grid-row: 6;
+    }
+
     .project_content {
         grid-column: 2/5;
         text-align: left;
