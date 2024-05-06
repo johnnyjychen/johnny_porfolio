@@ -553,6 +553,11 @@ iframe {
     margin: 20px;
 }
 
+.finding_icon_size {
+    width: 120px;
+    margin: 50px;
+}
+
 .image_top_bottom_margin {
     margin: 20px;
 }
