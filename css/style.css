@@ -553,6 +553,10 @@ iframe {
     margin: 20px;
 }
 
+.image_top_bottom_margin {
+    margin: 20px;
+}
+
 .water_question {
     font-size: 1rem;
     font-weight: bold;
@@ -584,7 +588,7 @@ iframe {
 
     .content {
         opacity: 0;
-        transition: opacity 1s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
     }
     
     .content.visible {
@@ -841,6 +845,10 @@ iframe {
     .problem_statment {
         grid-column: 3/5;
         text-align: left;
+    }
+
+    .affinity_wall {
+        grid-column: 2/5;
     }
 
     .analysis_description {
