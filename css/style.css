@@ -162,7 +162,14 @@ header nav div a h1 {
     justify-content: center;
 }
 
-.index_bg,
+.index_bg {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .work_background {
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
@@ -635,8 +642,37 @@ iframe {
         text-align: left;
     }
 
+    .work_h2 {
+        text-align: left;
+    }
+
     .hamburger_menu {
         visibility: hidden;
+    }
+
+    /* style the index */
+    .index_h1_highlight {
+        font-size: 6rem;
+        margin-bottom: 20px;
+        text-shadow: -6px 6px #BFCFE7;
+    }
+
+    .bubble_left, .bubble_right {
+        display: block;
+    }
+
+    /* restyle the grid */
+    .portfolio {
+        grid-template-columns: 70px 1fr 1fr 70px;
+        padding: 0 60px;
+    }
+
+    .content_background {
+        background: #fff;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 80%;
+        margin: 0 auto;
     }
 
     .nav_list {
@@ -719,9 +755,25 @@ iframe {
         box-shadow: 12px 12px 0 0 var(--shadow-color);
     }
 
-    .project_images,
-    .project_images_white {
-        margin-bottom: 20px;
+    .project_images {
+        position: relative;
+        display: inline-block;
+    }
+
+    .project_images img {
+        display: block;
+        width: 100%;
+        transition: filter 0.3s;
+    }
+
+    .project_description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+        text-align: center;
+        padding: 10px;
     }
 
     .project_images:hover img {
@@ -732,8 +784,10 @@ iframe {
         display: block;
     }
 
-    .project_images_white:hover img {
-        filter: blur(10px);
+    /* second: the font color is white */
+    .project_images_white {
+        position: relative;
+        display: inline-block;
     }
 
     .project_images_white:hover .project_description_white {
@@ -791,8 +845,8 @@ iframe {
             url(../images/background.jpeg);
     }
 
-    .references {
-        display: block;
+    body .background-image {
+        opacity: 0.2;
     }
 
     .intro_edu {
