@@ -550,36 +550,9 @@ iframe {
 }
 
 /* water */
-<<<<<<< HEAD
-.question_icon_size {
-    width: 120px;
-    margin: 20px;
-}
-
-.finding_icon_size {
-    width: 120px;
-    margin: 50px;
-}
-
-.image_top_bottom_margin {
-    margin: 20px;
-}
-
-.water_question {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #676A4E;
-}
-
-/* Video and demo */
-video,
-iframe {
-    border-radius: 5px;
-=======
-.references {
+/* .references {
     display: none;
->>>>>>> af6a8feb2ec9c074124189e55efc3459e4b73fde
-}
+} */
 
 /* media on 768px */
 @media screen and (min-width: 768px) {
@@ -815,6 +788,11 @@ iframe {
     /* style the work page */
     .work {
         margin-left: 200px;
+    }
+
+    /* style the reference */
+    .references {
+        display: block;
     }
 
 <<<<<<< HEAD
