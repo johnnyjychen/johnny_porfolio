@@ -262,6 +262,10 @@ p {
     font-size: 1.5rem;
 }
 
+.highlight-green {
+    color: #008A19;
+}
+
 .bubble_left,
 .bubble_right {
     display: none;
